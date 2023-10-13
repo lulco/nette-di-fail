@@ -1,0 +1,12 @@
+parameters:
+    test:
+        language: sk
+        resolvers:
+            - NetteDiFail\LangResolver()
+
+test:
+    lang: %test.language%
+#    resolvers: %test.resolvers%
+
+extensions:
+    test: NetteDiFail\TestExtension
